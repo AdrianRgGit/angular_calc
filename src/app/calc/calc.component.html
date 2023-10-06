@@ -1,1 +1,37 @@
-<p>calc works!</p>
+<header class="container text-center mt-5"><h1>Calc app</h1></header>
+
+<main class="container text-center">
+  <div class="n-container">
+    <div class="n1-container m-5">
+      <label for="n1"
+        >Number 1
+        <input
+          type="number"
+          name="n1"
+          id="n1"
+          class="form-control"
+          [(ngModel)]="n1"
+        />
+      </label>
+    </div>
+    <div class="n2-container m-5">
+      <label for="n2"
+        >Number 2
+        <input
+          type="number"
+          name="n2"
+          id="n2"
+          class="form-control"
+          [(ngModel)]="n2"
+        />
+      </label>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="btn btn-primary m-1" (click)="add()">Sum</button>
+    <button class="btn btn-primary m-1" (click)="reset()">Reset</button>
+  </div>
+  <div class="res-container">
+    <p>{{ sum }}</p>
+  </div>
+</main>
