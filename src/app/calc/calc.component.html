@@ -31,7 +31,8 @@
     <button class="btn btn-primary m-1" (click)="add()">Sum</button>
     <button class="btn btn-primary m-1" (click)="reset()">Reset</button>
   </div>
-  <div class="res-container">
-    <p>{{ sum }}</p>
+
+  <div>
+    <app-res [sum]="sum"></app-res>
   </div>
 </main>
